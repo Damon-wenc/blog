@@ -1,19 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Damon&#39;s Blog</title>
+  <title>Damon</title>
   <subtitle>Damon-wenc.GitHub.io</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://damon-wenc.github.io/"/>
-  <updated>2016-09-15T08:57:40.000Z</updated>
+  <updated>2016-11-26T11:06:50.000Z</updated>
   <id>http://damon-wenc.github.io/</id>
   
   <author>
-    <name>Damon Wen</name>
+    <name>wenchang</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>腾讯后台职位技能关键词热度</title>
+    <link href="http://damon-wenc.github.io/2016/11/26/tencent-jd-keywords/"/>
+    <id>http://damon-wenc.github.io/2016/11/26/tencent-jd-keywords/</id>
+    <published>2016-11-26T10:45:02.000Z</published>
+    <updated>2016-11-26T11:06:50.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="项目页链接"><a href="#项目页链接" class="headerlink" title="项目页链接"></a><a href="http://damon-wenc.github.io/Small-Data/">项目页链接</a></h2><h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>目的是想找出腾讯SNG部后台招聘所需要哪些技能, 期待针对性学习一下。</p>
+<p>程序通过遍历所有<a href="http://hr.tencent.com/position.php?keywords=SNG+%E5%90%8E%E5%8F%B0&amp;lid=2218&amp;tid=0" target="_blank" rel="external">SNG+深圳+后台</a>招聘网页, 对其中skills_array数组中的关键字（十分偷懒且不严谨的做法）进行热度记录, 最后按照热度从低到高的顺序排列出来。努力提高匹配度咯。</p>
+<p>下面是程序输出:</p>
+<blockquote>
+<p>31 SNG positions have been found. Please wait a little while…<br>skills heat are as below:<br>heat [0]     skill: storm<br>heat [0]     skill: 容灾<br>heat [0]     skill: 虚拟化数据库<br>heat [0]     skill: 富媒体<br>heat [0]     skill: 安全逻辑<br>heat [0]     skill: 索引系统<br>heat [0]     skill: 安全漏洞<br>heat [0]     skill: 网络攻击<br>heat [0]     skill: 网络并发<br>heat [0]     skill: 实时计算<br>heat [0]     skill: 广告变现<br>heat [0]     skill: 广告后台<br>heat [1]     skill: nosql<br>heat [1]     skill: hadoop<br>heat [1]     skill: spark<br>heat [1]     skill: lbs<br>heat [1]     skill: 自动化<br>heat [1]     skill: 存储架构<br>heat [1]     skill: 实时推荐<br>heat [1]     skill: 后台业务开发<br>heat [1]     skill: 无线互联网<br>heat [1]     skill: 计算机基础结构<br>heat [2]     skill: 重构<br>heat [2]     skill: 云计算<br>heat [2]     skill: 网络处理<br>heat [2]     skill: 大容量网络<br>heat [3]     skill: 海量数据<br>heat [3]     skill: 数据分析<br>heat [3]     skill: 分布式计算<br>heat [3]     skill: 互联网应用协议<br>heat [4]     skill: 脚本<br>heat [4]     skill: 压力<br>heat [4]     skill: 数据处理<br>heat [4]     skill: 通信系统<br>heat [4]     skill: 大容量通信<br>heat [4]     skill: 互联网业务<br>heat [5]     skill: 高可靠<br>heat [5]     skill: 大数据<br>heat [5]     skill: 精通c++<br>heat [5]     skill: 逻辑思维<br>heat [5]     skill: 进程间通讯<br>heat [6]     skill: 高并发<br>heat [7]     skill: 稳定<br>heat [9]     skill: 好学<br>heat [9]     skill: 高性能<br>heat [9]     skill: 面向对象<br>heat [9]     skill: 软件工程<br>heat [10]    skill: 网络安全<br>heat [11]    skill: python<br>heat [11]    skill: 主动<br>heat [11]    skill: 设计模式<br>heat [12]    skill: mysql<br>heat [12]    skill: 分布式<br>heat [14]    skill: tcp/ip<br>heat [15]    skill: 数据结构<br>heat [18]    skill: 操作系统<br>heat [19]    skill: 架构<br>heat [22]    skill: 优化<br>heat [24]    skill: 沟通<br>heat [26]    skill: c/c++<br>heat [29]    skill: linux<br>heat [31]    skill: cdn<br>heat [31]    skill: 经验</p>
+</blockquote>
+<p>这个..实用性来说肯定是自娱自乐，为了提高匹配努力吧。</p>
+<hr>
+<p><em>update</em></p>
+<p>最佳做法还是爬虫后用知名Python库<a href="https://github.com/fxsjy/jieba" target="_blank" rel="external">jieba</a>来做关键字分割，这样才能得到全部有效的关键字，以后再说吧，或许后面的项目会用到。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;项目页链接&quot;&gt;&lt;a href=&quot;#项目页链接&quot; class=&quot;headerlink&quot; title=&quot;项目页链接&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://damon-wenc.github.io/Small-Data/&quot;&gt;项目页链接&lt;/a&gt;&lt;/h2&gt;&lt;h2 id=
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="http://damon-wenc.github.io/tags/Python/"/>
+    
+      <category term="Spider" scheme="http://damon-wenc.github.io/tags/Spider/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
@@ -110,9 +142,9 @@
     <link href="http://damon-wenc.github.io/2014/03/26/high_rate_movies_in_douban_by_years/"/>
     <id>http://damon-wenc.github.io/2014/03/26/high_rate_movies_in_douban_by_years/</id>
     <published>2014-03-26T14:50:40.000Z</published>
-    <updated>2016-11-23T15:10:36.000Z</updated>
+    <updated>2016-11-26T11:06:13.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="豆瓣高分电影年代录"><a href="#豆瓣高分电影年代录" class="headerlink" title="豆瓣高分电影年代录"></a>豆瓣高分电影年代录</h1><h2 id="项目页链接"><a href="#项目页链接" class="headerlink" title="项目页链接"></a><a href="http://damon-wenc.github.io/Small-Data/">项目页链接</a></h2><h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>这个是我从<a href="http://movie.douban.com/top250?start=0&amp;filter=&amp;type=" target="_blank" rel="external">豆瓣电影TOP250</a>系列直接抓取下来的, 目的是想查看一下伟大电影的诞生与经济大小年是否有对应关系。</p>
+    <content type="html"><![CDATA[<h2 id="项目页链接"><a href="#项目页链接" class="headerlink" title="项目页链接"></a><a href="http://damon-wenc.github.io/Small-Data/">项目页链接</a></h2><h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>这个是我从<a href="http://movie.douban.com/top250?start=0&amp;filter=&amp;type=" target="_blank" rel="external">豆瓣电影TOP250</a>系列直接抓取下来的, 目的是想查看一下伟大电影的诞生与经济大小年是否有对应关系。</p>
 <p>当然这个实现方法明显是不合理的, 一是我的样品库太小了, 二是好多好电影, 特别是近年的, 或许需要时间及机缘才会被大家所发现对吧(例如大话西游), 所以这里只是仅供一个构思, 主要是练习一下Python对网页的抓取。</p>
 <p>这第一个爬虫简单得略粗糙了，权当练习吧。</p>
 <p>以下是程序的输出：</p>
@@ -127,7 +159,7 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;豆瓣高分电影年代录&quot;&gt;&lt;a href=&quot;#豆瓣高分电影年代录&quot; class=&quot;headerlink&quot; title=&quot;豆瓣高分电影年代录&quot;&gt;&lt;/a&gt;豆瓣高分电影年代录&lt;/h1&gt;&lt;h2 id=&quot;项目页链接&quot;&gt;&lt;a href=&quot;#项目页链接&quot; class=&quot;header
+      &lt;h2 id=&quot;项目页链接&quot;&gt;&lt;a href=&quot;#项目页链接&quot; class=&quot;headerlink&quot; title=&quot;项目页链接&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://damon-wenc.github.io/Small-Data/&quot;&gt;项目页链接&lt;/a&gt;&lt;/h2&gt;&lt;h2 id=
     
     </summary>
     
