@@ -1,0 +1,44 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="wenchang"><meta name="description" content="项目页链接正文想看好电影，新的电影可以尽可能地在影院观看，贡献票房，老的经典大片就只有在网上，咳咳，搜一下资源了。发现一个很好的网站：小电影天堂，真心希望它能持久并坚挺，不过它的同行倒是已经有数不清的先烈牺牲了。所以这里打算利用下Python的爬虫，保存一部分电影资源下来，以备后"><meta name="keywords" content="Python,Spider"><title>从电影网站爬高清资源 · Damon</title><link rel="icon" href="/favicon.ico"><link rel="canonical" href="http://damon-wenc.github.io/2015/10/15/save-hd-resource-from-website/"><link rel="alternate" href="/atom.xml" title="Damon"><link rel="stylesheet" href="/fonts/iconfont/iconfont.css"><link rel="stylesheet" href="/css/style.css"><script type="text/javascript">var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?Your baidu Analytics ID";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'Your Google Analytics ID', 'auto');
+ga('send', 'pageview');</script></head><body><div id="main"><header><a href="/." class="logo">Damon</a><ul class="nav"><li class="nav-link"><a href="/" target="_self">Home</a></li><li class="nav-link"><a href="/archives/" target="_self">Archives</a></li><li class="nav-link"><a href="/categories/" target="_self">Categories</a></li><li class="nav-link"><a href="/tags/" target="_self">Tags</a></li><li class="nav-link"><a href="/about/" target="_self">About</a></li></ul></header><section id="container"><article class="post"><h1 class="post-title">从电影网站爬高清资源</h1><span class="post-time">Oct 15, 2015</span><div id="sidebar" class="post-sidebar"><h3 class="heading">Contents</h3><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#项目页链接"><span class="toc-text">项目页链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#正文"><span class="toc-text">正文</span></a></li></ol></div><div class="post-content"><h2 id="项目页链接"><a href="#项目页链接" class="headerlink" title="项目页链接"></a><a href="http://damon-wenc.github.io/Small-Data/">项目页链接</a></h2><h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>想看好电影，新的电影可以尽可能地在影院观看，贡献票房，老的经典大片就只有在网上，咳咳，搜一下资源了。发现一个很好的网站：<a href="http://www.xdytt.com" target="_blank" rel="external">小电影天堂</a>，真心希望它能持久并坚挺，不过它的同行倒是已经有数不清的先烈牺牲了。所以这里打算利用下Python的爬虫，保存一部分电影资源下来，以备后用。</p>
+<p>采用的且基于技术主要有:</p>
+<ol>
+<li>Python 2.7.10(MacOS X 默认)</li>
+<li>lxml.html 及 xpath</li>
+<li>gevent 及 pool</li>
+</ol>
+<p>由于之前熟悉的是re正则表达式及多线程/进程方式，这次想用不同的技术尝试一下，决定从<a href="http://www.zhihu.com/question/24590883" target="_blank" rel="external">知乎</a>的讨论中挑选gevent作高效率的协程，lxml来爬取数据。<br>事实证明确实不错，效率嘛.. 在熟悉了之后是挺高的，就是这学习曲线有点陡，没入门前环境配置、字体编码、文档、博客都是花了不少时间啃的，不过入门后还挺好，新方法效率的确高。</p>
+<p>需要注意的点有：</p>
+<ol>
+<li>因为是爬别人的网站，所以要注意好心人可能是建站按流量走的，所以尽量不要反复无意义的去爬网页，且爬的时候控制下速度，别丧心病狂地开多线程… 要做到良心限速。</li>
+<li>可能是网速限制，或者是网站限制连接数，发现在用gevent爬网页在同时“线程数”比较多的时候，会报gevent的诡异的错误。由于spawn没有连接数限制，所以切换到Pool，来限制下连接数。在家里测试6M网络最多开40路同时就能跑满。</li>
+<li>同时在打开网页调用urllib2时也要相应的增加超时时间，协程多了相对有点慢。</li>
+</ol>
+<p>随脚本一起上传了结果文档：movie_info.html(<em>另存为后用浏览器打开格式就清晰了</em>)。</p>
+<p>大致的效果如下：<br><img src="http://oh8zuwlyg.bkt.clouddn.com/screenshot.png" alt="screenshot"></p>
+<p>发现速度还不错，从3000多个链接爬675个6.0分以上的1080P电影下来一共花费10分钟多一点，蹲个坑就搞定了… 而且是在限速了的情况下。攒着慢慢看 XD</p>
+<p>再次感谢<a href="http://www.xdytt.com" target="_blank" rel="external">小电影天堂</a>的高清资源</p>
+</div></article><div class="tags"><a href="/tags/Python/">Python</a><a href="/tags/Spider/">Spider</a></div><div class="paginator"><a href="/2016/09/15/hello-world/" class="prev"><i class="iconfont icon-left"></i><span> Prev</span></a><a href="/2014/11/19/tencent-jd-keywords/" class="next"><span>Next</span><i class="iconfont icon-right"></i></a></div><section id="comments"><div id="disqus_thread"></div></section><script type="text/javascript">var disqus_config = function () {
+    this.page.url = 'http://damon-wenc.github.io/2015/10/15/save-hd-resource-from-website/';
+    this.page.identifier = '2015/10/15/save-hd-resource-from-website/';
+    this.page.title = '从电影网站爬高清资源';
+};
+(function() {
+var d = document, s = d.createElement('script');
+
+s.src = '//Your disqus ID.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();</script></section><footer><div class="copyright"><p class="power">Powered by <a href="https://hexo.io/">Hexo</a> and Theme by <a href="https://github.com/ahonn/hexo-theme-even"> Even</a></p><p class="since">&copy;2016<span class="heart"><i class="iconfont icon-heart"></i></span><span class="author">wenchang</span></p></div><label id="back2top"><i class="iconfont icon-up"></i></label></footer></div><script src="/js/zepto.min.js"></script><script src="/js/theme.js"></script></body></html>
