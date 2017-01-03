@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://damon-wenc.github.io/"/>
-  <updated>2017-01-03T14:30:59.000Z</updated>
+  <updated>2017-01-03T14:32:04.000Z</updated>
   <id>http://damon-wenc.github.io/</id>
   
   <author>
@@ -20,9 +20,9 @@
     <link href="http://damon-wenc.github.io/2017/01/02/end-of-2016-start-of-2017/"/>
     <id>http://damon-wenc.github.io/2017/01/02/end-of-2016-start-of-2017/</id>
     <published>2017-01-02T11:05:50.000Z</published>
-    <updated>2017-01-03T14:30:59.000Z</updated>
+    <updated>2017-01-03T14:32:04.000Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="16已去，17加油"><a href="#16已去，17加油" class="headerlink" title="16已去，17加油"></a>16已去，17加油</h2><p>每当顺着时间走时，只觉得时间走得挺快，每天紧巴巴的追着时间的脚步；结果一旦回头时才发现是辣么的触目惊心呐！</p>
+    <content type="html"><![CDATA[<p>每当顺着时间走时，只觉得时间走得挺快，每天紧巴巴的追着时间的脚步；结果一旦回头时才发现是辣么的触目惊心呐！</p>
 <p>16年发生了很多的事，流水账是：</p>
 <ul>
 <li>1月很悲伤</li>
@@ -46,7 +46,7 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;16已去，17加油&quot;&gt;&lt;a href=&quot;#16已去，17加油&quot; class=&quot;headerlink&quot; title=&quot;16已去，17加油&quot;&gt;&lt;/a&gt;16已去，17加油&lt;/h2&gt;&lt;p&gt;每当顺着时间走时，只觉得时间走得挺快，每天紧巴巴的追着时间的脚步；结果一旦回头时才发现是辣么的触目惊心呐！&lt;/p&gt;
+      &lt;p&gt;每当顺着时间走时，只觉得时间走得挺快，每天紧巴巴的追着时间的脚步；结果一旦回头时才发现是辣么的触目惊心呐！&lt;/p&gt;
 &lt;p&gt;16年发生了很多的事，流水账是：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;1月很悲伤&lt;/li&gt;
@@ -230,8 +230,8 @@
   
   <entry>
     <title>简易自动化测试框架</title>
-    <link href="http://damon-wenc.github.io/2014/05/08/simple_auto_test_framework/"/>
-    <id>http://damon-wenc.github.io/2014/05/08/simple_auto_test_framework/</id>
+    <link href="http://damon-wenc.github.io/2014/05/08/simple-auto-test-framework/"/>
+    <id>http://damon-wenc.github.io/2014/05/08/simple-auto-test-framework/</id>
     <published>2014-05-08T03:11:11.000Z</published>
     <updated>2016-12-04T14:14:43.000Z</updated>
     
@@ -294,8 +294,8 @@
   
   <entry>
     <title>豆瓣高分电影年代录</title>
-    <link href="http://damon-wenc.github.io/2014/03/26/high_rate_movies_in_douban_by_years/"/>
-    <id>http://damon-wenc.github.io/2014/03/26/high_rate_movies_in_douban_by_years/</id>
+    <link href="http://damon-wenc.github.io/2014/03/26/high-rate-movies-in-douban-by-years/"/>
+    <id>http://damon-wenc.github.io/2014/03/26/high-rate-movies-in-douban-by-years/</id>
     <published>2014-03-26T14:50:40.000Z</published>
     <updated>2016-12-04T14:05:29.000Z</updated>
     
