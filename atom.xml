@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="http://damon-wenc.github.io/blog/"/>
-  <updated>2017-05-21T04:50:56.000Z</updated>
+  <updated>2019-02-23T16:25:21.958Z</updated>
   <id>http://damon-wenc.github.io/blog/</id>
   
   <author>
@@ -14,6 +14,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>老司机练级攻略</title>
+    <link href="http://damon-wenc.github.io/blog/2019/02/24/way-to-an-old-driver/"/>
+    <id>http://damon-wenc.github.io/blog/2019/02/24/way-to-an-old-driver/</id>
+    <published>2019-02-23T16:14:16.000Z</published>
+    <updated>2019-02-23T16:25:21.958Z</updated>
+    
+    <content type="html"><![CDATA[<p>这里的“老司机”，咳咳，是真正意义上的老司机…<br>这篇水文，既用以阶段性警醒自己开车不要犯错，同时方便与亲朋好友深刻交流入门及上路心得，也可以分享给有需要的人士。<br>既然是水文，就充分发扬“水”的特点，从选车购车、基础知识、重要前戏、实际操作四个方面疯狂BB起来…</p>
+<a id="more"></a>
+<h1 id="选车购车"><a href="#选车购车" class="headerlink" title="选车购车"></a>选车购车</h1><h1 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h1><h1 id="重要前戏"><a href="#重要前戏" class="headerlink" title="重要前戏"></a>重要前戏</h1><h1 id="实际操作"><a href="#实际操作" class="headerlink" title="实际操作"></a>实际操作</h1><h1 id="寄语"><a href="#寄语" class="headerlink" title="寄语"></a>寄语</h1><p>愿大家都成为合格的驾驶员。既充分节约自己的时间，提高效率；也成为优秀的交通参与者，不为社会添堵。<br><strong>生命冇take two，请小心演绎！</strong></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这里的“老司机”，咳咳，是真正意义上的老司机…&lt;br&gt;这篇水文，既用以阶段性警醒自己开车不要犯错，同时方便与亲朋好友深刻交流入门及上路心得，也可以分享给有需要的人士。&lt;br&gt;既然是水文，就充分发扬“水”的特点，从选车购车、基础知识、重要前戏、实际操作四个方面疯狂BB起来…&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="水" scheme="http://damon-wenc.github.io/blog/tags/%E6%B0%B4/"/>
+    
+  </entry>
   
   <entry>
     <title>蜜月巴厘岛</title>
@@ -139,9 +162,9 @@
     </summary>
     
     
-      <category term="水" scheme="http://damon-wenc.github.io/blog/tags/%E6%B0%B4/"/>
-    
       <category term="Python" scheme="http://damon-wenc.github.io/blog/tags/Python/"/>
+    
+      <category term="水" scheme="http://damon-wenc.github.io/blog/tags/%E6%B0%B4/"/>
     
   </entry>
   
