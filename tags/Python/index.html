@@ -1,14 +1,395 @@
-<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="wenchang"><meta name="description" content="something about code and me"><title>Python · Simple Talks</title><link rel="icon" href="/yangcongtou.ico"><link rel="canonical" href="http://damon-wenc.github.io/tags/Python/"><link rel="alternate" href="/atom.xml" title="Simple Talks"><link rel="stylesheet" href="/fonts/iconfont/iconfont.css"><link rel="stylesheet" href="/css/style.css"><script type="text/javascript">var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?Your baidu Analytics ID";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script><script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-ga('create', 'Your Google Analytics ID', 'auto');
-ga('send', 'pageview');</script></head><body><div id="main"><header><a href="/." class="logo">Simple Talks</a><ul class="nav"><li class="nav-link"><a href="/" target="_self">Home</a></li><li class="nav-link"><a href="/archives/" target="_self">Archives</a></li><li class="nav-link"><a href="/tags/" target="_self" class="active">Tags</a></li><li class="nav-link"><a href="/about/" target="_self">About</a></li></ul></header><section id="container"><div class="archive"><h2 class="tag">Python</h2><div class="post-item"><div class="post-time tag">Dec 4, 2016</div><a href="/2016/12/04/license-plate-lottery-chance/" class="post-link">深圳摇号概率</a></div><div class="post-item"><div class="post-time tag">Nov 8, 2015</div><a href="/2015/11/08/save-another-hd-movie-website/" class="post-link">再爬一个更全的高清电影资源站</a></div><div class="post-item"><div class="post-time tag">Oct 15, 2015</div><a href="/2015/10/15/save-hd-resource-from-website/" class="post-link">从电影网站爬高清资源</a></div><div class="post-item"><div class="post-time tag">Nov 19, 2014</div><a href="/2014/11/19/tencent-jd-keywords/" class="post-link">腾讯后台职位技能关键词热度</a></div><div class="post-item"><div class="post-time tag">May 8, 2014</div><a href="/2014/05/08/simple-auto-test-framework/" class="post-link">简易自动化测试框架</a></div><div class="post-item"><div class="post-time tag">Mar 26, 2014</div><a href="/2014/03/26/high-rate-movies-in-douban-by-years/" class="post-link">豆瓣高分电影年代录</a></div></div><div class="paginator"></div></section><footer><div class="copyright"><p class="power">Powered by <a href="https://hexo.io/">Hexo</a> and Theme by <a href="https://github.com/ahonn/hexo-theme-even"> Even</a></p><p class="since">&copy;2014-2017<span class="heart"><i class="iconfont icon-heart"></i></span><span class="author">wenchang</span></p></div><label id="back2top"><i class="iconfont icon-up"></i></label></footer></div><script src="/js/zepto.min.js"></script><script src="/js/theme.js"></script></body></html>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+
+  <meta name="description" content="something about code and me"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Simple Talks">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.10.2" />
+
+
+
+<link rel="canonical" href="http://damon-wenc.github.io/tags/Python/"/>
+
+
+
+  <link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css" />
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/lib/nprogress/nprogress.min.css" />
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.10.2" />
+
+
+
+  
+
+
+
+  <script id="baidu_push">
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+
+
+
+
+
+
+
+<script>
+  window.config = {"leancloud":{"app_id":null,"app_key":null},"toc":true,"fancybox":true,"pjax":true};
+</script>
+
+    <title>
+  
+    Python · Simple Talks
+  
+</title>
+  </head>
+
+  <body><div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/." class="logo">Simple Talks</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    
+      <a href="/">
+        <li class="mobile-menu-item">
+          
+          
+            首页
+          
+        </li>
+      </a>
+    
+  </ul>
+</nav>
+
+    <div class="container" id="mobile-panel">
+      <header id="header" class="header"><div class="logo-wrapper">
+  <a href="/." class="logo">Simple Talks</a>
+</div>
+
+<nav class="site-navbar">
+  
+    <ul id="menu" class="menu">
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/">
+            
+            
+              首页
+            
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+
+      </header>
+
+      <main id="main" class="main">
+        <div class="content-wrapper">
+          <div id="content" class="content">
+            
+  
+  
+  
+
+  <section id="archive" class="archive">
+    
+      
+        <div class="archive-title tag">
+          <h2 class="archive-name">Python</h2>
+        </div>
+      
+    
+
+    
+      
+
+      <div class="archive-post">
+        <span class="archive-post-time">
+          
+            2016-12-04
+          
+        </span>
+        <span class="archive-post-title">
+          <a href="/2016/12/04/license-plate-lottery-chance/" class="archive-post-link">
+            深圳摇号概率
+          </a>
+        </span>
+      </div>
+    
+      
+
+      <div class="archive-post">
+        <span class="archive-post-time">
+          
+            2015-11-08
+          
+        </span>
+        <span class="archive-post-title">
+          <a href="/2015/11/08/save-another-hd-movie-website/" class="archive-post-link">
+            再爬一个更全的高清电影资源站
+          </a>
+        </span>
+      </div>
+    
+      
+
+      <div class="archive-post">
+        <span class="archive-post-time">
+          
+            2015-10-15
+          
+        </span>
+        <span class="archive-post-title">
+          <a href="/2015/10/15/save-hd-resource-from-website/" class="archive-post-link">
+            从电影网站爬高清资源
+          </a>
+        </span>
+      </div>
+    
+      
+
+      <div class="archive-post">
+        <span class="archive-post-time">
+          
+            2014-11-19
+          
+        </span>
+        <span class="archive-post-title">
+          <a href="/2014/11/19/tencent-jd-keywords/" class="archive-post-link">
+            腾讯后台职位技能关键词热度
+          </a>
+        </span>
+      </div>
+    
+      
+
+      <div class="archive-post">
+        <span class="archive-post-time">
+          
+            2014-05-08
+          
+        </span>
+        <span class="archive-post-title">
+          <a href="/2014/05/08/simple-auto-test-framework/" class="archive-post-link">
+            简易自动化测试框架
+          </a>
+        </span>
+      </div>
+    
+      
+
+      <div class="archive-post">
+        <span class="archive-post-time">
+          
+            2014-03-26
+          
+        </span>
+        <span class="archive-post-title">
+          <a href="/2014/03/26/high-rate-movies-in-douban-by-years/" class="archive-post-link">
+            豆瓣高分电影年代录
+          </a>
+        </span>
+      </div>
+    
+  </section>
+
+  
+  <nav class="pagination">
+    
+    
+  </nav>
+
+
+
+
+          </div>
+          
+
+        </div>
+      </main>
+
+      <footer id="footer" class="footer">
+
+  <div class="social-links">
+    
+      
+        
+          <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+          <a href="https://github.com/ahonn" class="iconfont icon-github" title="github"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+
+    
+      <a href="/atom.xml" class="iconfont icon-rss" title="rss"></a>
+    
+  </div>
+
+
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://hexo.io/">Hexo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
+  </span>
+
+  <span class="copyright-year">
+    
+    &copy; 
+     
+      2015 - 
+    
+    2019
+
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">wenchang</span>
+  </span>
+</div>
+
+      </footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div>
+
+    
+  
+  
+
+  
+
+
+
+    
+  
+
+
+
+  
+  
+
+
+
+
+
+  
+    <script type="text/javascript" src="/lib/jquery/jquery.min.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/slideout/slideout.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/fancybox/jquery.fancybox.pack.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/pjax/jquery.pjax.min.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/nprogress/nprogress.min.js"></script>
+  
+
+
+    <script type="text/javascript" src="/js/src/even.js?v=2.10.2"></script>
+
+  </body>
+</html>

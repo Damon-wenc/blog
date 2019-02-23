@@ -1,17 +1,184 @@
-<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="wenchang"><meta name="description" content="正文目的是想找出腾讯SNG部后台招聘所需要哪些技能,期待针对性学习一下。程序通过遍历所有SNG+深圳+后台招聘网页,对其中skills_array数组中的关键字（十分偷懒且不严谨的做法）进行热度记录,最后按照热度从低到高的顺序排列出来。努力提高匹配度咯。下面是程序输出:"><meta name="keywords" content="Python,Spider"><title>腾讯后台职位技能关键词热度 · Simple Talks</title><link rel="icon" href="/yangcongtou.ico"><link rel="canonical" href="http://damon-wenc.github.io/2014/11/19/tencent-jd-keywords/"><link rel="alternate" href="/atom.xml" title="Simple Talks"><link rel="stylesheet" href="/fonts/iconfont/iconfont.css"><link rel="stylesheet" href="/css/style.css"><script type="text/javascript">var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?Your baidu Analytics ID";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script><script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-ga('create', 'Your Google Analytics ID', 'auto');
-ga('send', 'pageview');</script></head><body><div id="main"><header><a href="/." class="logo">Simple Talks</a><ul class="nav"><li class="nav-link"><a href="/" target="_self">Home</a></li><li class="nav-link"><a href="/archives/" target="_self">Archives</a></li><li class="nav-link"><a href="/tags/" target="_self">Tags</a></li><li class="nav-link"><a href="/about/" target="_self">About</a></li></ul></header><section id="container"><article class="post"><h1 class="post-title">腾讯后台职位技能关键词热度</h1><span class="post-time">Nov 19, 2014</span><div id="sidebar" class="post-sidebar"><h3 class="heading">Contents</h3><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#正文"><span class="toc-text">正文</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#项目页链接"><span class="toc-text">项目页链接</span></a></li></ol></div><div class="post-content"><h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>目的是想找出腾讯SNG部后台招聘所需要哪些技能, 期待针对性学习一下。</p>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+
+  <meta name="description" content="腾讯后台职位技能关键词热度"/>
+
+
+
+
+  <meta name="keywords" content="Python, Spider, Simple Talks" />
+
+
+
+
+
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Simple Talks">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.10.2" />
+
+
+
+<link rel="canonical" href="http://damon-wenc.github.io/2014/11/19/tencent-jd-keywords/"/>
+
+
+
+  <link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css" />
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/lib/nprogress/nprogress.min.css" />
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.10.2" />
+
+
+
+  
+
+
+
+  <script id="baidu_push">
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+
+
+
+
+
+
+
+<script>
+  window.config = {"leancloud":{"app_id":null,"app_key":null},"toc":true,"fancybox":true,"pjax":true};
+</script>
+
+    <title> 腾讯后台职位技能关键词热度 - Simple Talks </title>
+  </head>
+
+  <body><div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/." class="logo">Simple Talks</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    
+      <a href="/">
+        <li class="mobile-menu-item">
+          
+          
+            首页
+          
+        </li>
+      </a>
+    
+  </ul>
+</nav>
+
+    <div class="container" id="mobile-panel">
+      <header id="header" class="header"><div class="logo-wrapper">
+  <a href="/." class="logo">Simple Talks</a>
+</div>
+
+<nav class="site-navbar">
+  
+    <ul id="menu" class="menu">
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/">
+            
+            
+              首页
+            
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+
+      </header>
+
+      <main id="main" class="main">
+        <div class="content-wrapper">
+          <div id="content" class="content">
+            
+  
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          腾讯后台职位技能关键词热度
+        
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2014-11-19
+        </span>
+        
+        
+      </div>
+    </header>
+
+    
+    
+  <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">文章目录</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#正文"><span class="toc-text">正文</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#项目页链接"><span class="toc-text">项目页链接</span></a></li></ol>
+    </div>
+  </div>
+
+
+
+    <div class="post-content">
+      
+        <h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>目的是想找出腾讯SNG部后台招聘所需要哪些技能, 期待针对性学习一下。</p>
 <p>程序通过遍历所有<a href="http://hr.tencent.com/position.php?keywords=SNG+%E5%90%8E%E5%8F%B0&amp;lid=2218&amp;tid=0" target="_blank" rel="external">SNG+深圳+后台</a>招聘网页, 对其中skills_array数组中的关键字（十分偷懒且不严谨的做法）进行热度记录, 最后按照热度从低到高的顺序排列出来。努力提高匹配度咯。</p>
 <p>下面是程序输出:</p>
 <a id="more"></a>
@@ -22,16 +189,203 @@ ga('send', 'pageview');</script></head><body><div id="main"><header><a href="/."
 <hr>
 <p><em>—update—</em></p>
 <p><em>最佳做法还是爬虫后用知名Python库<a href="https://github.com/fxsjy/jieba" target="_blank" rel="external">jieba</a>来做关键字分割，这样才能得到全部有效的关键字，以后再说吧，或许后面的项目会用到。</em></p>
-<h2 id="项目页链接"><a href="#项目页链接" class="headerlink" title="项目页链接"></a><a href="http://damon-wenc.github.io/Small-Data/">项目页链接</a></h2></div></article><div class="tags"><a href="/tags/Python/">Python</a><a href="/tags/Spider/">Spider</a></div><div class="paginator"><a href="/2015/10/15/save-hd-resource-from-website/" class="prev"><i class="iconfont icon-left"></i><span> Prev</span></a><a href="/2014/05/08/simple-auto-test-framework/" class="next"><span>Next</span><i class="iconfont icon-right"></i></a></div><section id="comments"><div id="disqus_thread"></div></section><script type="text/javascript">var disqus_config = function () {
-    this.page.url = 'http://damon-wenc.github.io/2014/11/19/tencent-jd-keywords/';
-    this.page.identifier = '2014/11/19/tencent-jd-keywords/';
-    this.page.title = '腾讯后台职位技能关键词热度';
-};
-(function() {
-var d = document, s = d.createElement('script');
+<h2 id="项目页链接"><a href="#项目页链接" class="headerlink" title="项目页链接"></a><a href="http://damon-wenc.github.io/Small-Data/">项目页链接</a></h2>
+      
+    </div>
 
-s.src = '//Your disqus ID.disqus.com/embed.js';
+    
+      
+      
 
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();</script></section><footer><div class="copyright"><p class="power">Powered by <a href="https://hexo.io/">Hexo</a> and Theme by <a href="https://github.com/ahonn/hexo-theme-even"> Even</a></p><p class="since">&copy;2014-2017<span class="heart"><i class="iconfont icon-heart"></i></span><span class="author">wenchang</span></p></div><label id="back2top"><i class="iconfont icon-up"></i></label></footer></div><script src="/js/zepto.min.js"></script><script src="/js/theme.js"></script></body></html>
+  <div class="post-copyright">
+    <p class="copyright-item">
+      <span>原文作者: </span>
+      <a href="http://damon-wenc.github.io">wenchang</a>
+    </p>
+    <p class="copyright-item">
+      <span>原文链接: </span>
+      <a href="http://damon-wenc.github.io/2014/11/19/tencent-jd-keywords/">http://damon-wenc.github.io/2014/11/19/tencent-jd-keywords/</a>
+    </p>
+    <p class="copyright-item">
+      <span>许可协议: </span>
+      
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>
+    </p>
+  </div>
+
+
+
+      
+      
+    
+
+    
+      <footer class="post-footer">
+        
+          <div class="post-tags">
+            
+              <a href="/tags/Python/">Python</a>
+            
+              <a href="/tags/Spider/">Spider</a>
+            
+          </div>
+        
+        
+        
+  <nav class="post-nav">
+    
+      <a class="prev" href="/2015/10/15/save-hd-resource-from-website/">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text nav-default">从电影网站爬高清资源</span>
+        <span class="prev-text nav-mobile">上一篇</span>
+      </a>
+    
+    
+      <a class="next" href="/2014/05/08/simple-auto-test-framework/">
+        <span class="next-text nav-default">简易自动化测试框架</span>
+        <span class="prev-text nav-mobile">下一篇</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+    
+  </nav>
+
+
+      </footer>
+    
+
+  </article>
+
+
+          </div>
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+      </main>
+
+      <footer id="footer" class="footer">
+
+  <div class="social-links">
+    
+      
+        
+          <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+          <a href="https://github.com/ahonn" class="iconfont icon-github" title="github"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+
+    
+      <a href="/atom.xml" class="iconfont icon-rss" title="rss"></a>
+    
+  </div>
+
+
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://hexo.io/">Hexo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
+  </span>
+
+  <span class="copyright-year">
+    
+    &copy; 
+     
+      2015 - 
+    
+    2019
+
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">wenchang</span>
+  </span>
+</div>
+
+      </footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div>
+
+    
+  
+  
+
+  
+
+
+
+    
+  
+
+
+
+  
+  
+
+
+
+
+
+  
+    <script type="text/javascript" src="/lib/jquery/jquery.min.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/slideout/slideout.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/fancybox/jquery.fancybox.pack.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/pjax/jquery.pjax.min.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/nprogress/nprogress.min.js"></script>
+  
+
+
+    <script type="text/javascript" src="/js/src/even.js?v=2.10.2"></script>
+
+  </body>
+</html>
