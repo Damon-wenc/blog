@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Simple Talks</title>
   <subtitle>简·聊</subtitle>
-  <link href="/atom.xml" rel="self"/>
+  <link href="/blog/atom.xml" rel="self"/>
   
-  <link href="http://damon-wenc.github.io/"/>
+  <link href="http://damon-wenc.github.io/blog/"/>
   <updated>2017-05-21T04:50:56.000Z</updated>
-  <id>http://damon-wenc.github.io/</id>
+  <id>http://damon-wenc.github.io/blog/</id>
   
   <author>
     <name>wenchang</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>蜜月巴厘岛</title>
-    <link href="http://damon-wenc.github.io/2017/05/14/honey-moon-in-bali-island/"/>
-    <id>http://damon-wenc.github.io/2017/05/14/honey-moon-in-bali-island/</id>
+    <link href="http://damon-wenc.github.io/blog/2017/05/14/honey-moon-in-bali-island/"/>
+    <id>http://damon-wenc.github.io/blog/2017/05/14/honey-moon-in-bali-island/</id>
     <published>2017-05-14T10:36:00.000Z</published>
     <updated>2017-05-21T04:50:56.000Z</updated>
     
@@ -48,14 +48,14 @@
     </summary>
     
     
-      <category term="水" scheme="http://damon-wenc.github.io/tags/%E6%B0%B4/"/>
+      <category term="水" scheme="http://damon-wenc.github.io/blog/tags/%E6%B0%B4/"/>
     
   </entry>
   
   <entry>
     <title>16已去，17加油</title>
-    <link href="http://damon-wenc.github.io/2017/01/02/end-of-2016-start-of-2017/"/>
-    <id>http://damon-wenc.github.io/2017/01/02/end-of-2016-start-of-2017/</id>
+    <link href="http://damon-wenc.github.io/blog/2017/01/02/end-of-2016-start-of-2017/"/>
+    <id>http://damon-wenc.github.io/blog/2017/01/02/end-of-2016-start-of-2017/</id>
     <published>2017-01-02T11:05:50.000Z</published>
     <updated>2017-05-14T09:55:30.000Z</updated>
     
@@ -97,14 +97,14 @@
     </summary>
     
     
-      <category term="水" scheme="http://damon-wenc.github.io/tags/%E6%B0%B4/"/>
+      <category term="水" scheme="http://damon-wenc.github.io/blog/tags/%E6%B0%B4/"/>
     
   </entry>
   
   <entry>
     <title>深圳摇号概率</title>
-    <link href="http://damon-wenc.github.io/2016/12/04/license-plate-lottery-chance/"/>
-    <id>http://damon-wenc.github.io/2016/12/04/license-plate-lottery-chance/</id>
+    <link href="http://damon-wenc.github.io/blog/2016/12/04/license-plate-lottery-chance/"/>
+    <id>http://damon-wenc.github.io/blog/2016/12/04/license-plate-lottery-chance/</id>
     <published>2016-12-04T11:05:50.000Z</published>
     <updated>2016-12-05T14:37:50.000Z</updated>
     
@@ -139,16 +139,16 @@
     </summary>
     
     
-      <category term="Python" scheme="http://damon-wenc.github.io/tags/Python/"/>
+      <category term="水" scheme="http://damon-wenc.github.io/blog/tags/%E6%B0%B4/"/>
     
-      <category term="水" scheme="http://damon-wenc.github.io/tags/%E6%B0%B4/"/>
+      <category term="Python" scheme="http://damon-wenc.github.io/blog/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>再爬一个更全的高清电影资源站</title>
-    <link href="http://damon-wenc.github.io/2015/11/08/save-another-hd-movie-website/"/>
-    <id>http://damon-wenc.github.io/2015/11/08/save-another-hd-movie-website/</id>
+    <link href="http://damon-wenc.github.io/blog/2015/11/08/save-another-hd-movie-website/"/>
+    <id>http://damon-wenc.github.io/blog/2015/11/08/save-another-hd-movie-website/</id>
     <published>2015-11-08T15:44:01.000Z</published>
     <updated>2016-12-04T14:05:55.000Z</updated>
     
@@ -177,16 +177,16 @@
     </summary>
     
     
-      <category term="Python" scheme="http://damon-wenc.github.io/tags/Python/"/>
+      <category term="Python" scheme="http://damon-wenc.github.io/blog/tags/Python/"/>
     
-      <category term="Spider" scheme="http://damon-wenc.github.io/tags/Spider/"/>
+      <category term="Spider" scheme="http://damon-wenc.github.io/blog/tags/Spider/"/>
     
   </entry>
   
   <entry>
     <title>从电影网站爬高清资源</title>
-    <link href="http://damon-wenc.github.io/2015/10/15/save-hd-resource-from-website/"/>
-    <id>http://damon-wenc.github.io/2015/10/15/save-hd-resource-from-website/</id>
+    <link href="http://damon-wenc.github.io/blog/2015/10/15/save-hd-resource-from-website/"/>
+    <id>http://damon-wenc.github.io/blog/2015/10/15/save-hd-resource-from-website/</id>
     <published>2015-10-15T11:20:39.000Z</published>
     <updated>2016-12-04T14:04:30.000Z</updated>
     
@@ -224,16 +224,16 @@
     </summary>
     
     
-      <category term="Python" scheme="http://damon-wenc.github.io/tags/Python/"/>
+      <category term="Python" scheme="http://damon-wenc.github.io/blog/tags/Python/"/>
     
-      <category term="Spider" scheme="http://damon-wenc.github.io/tags/Spider/"/>
+      <category term="Spider" scheme="http://damon-wenc.github.io/blog/tags/Spider/"/>
     
   </entry>
   
   <entry>
     <title>腾讯后台职位技能关键词热度</title>
-    <link href="http://damon-wenc.github.io/2014/11/19/tencent-jd-keywords/"/>
-    <id>http://damon-wenc.github.io/2014/11/19/tencent-jd-keywords/</id>
+    <link href="http://damon-wenc.github.io/blog/2014/11/19/tencent-jd-keywords/"/>
+    <id>http://damon-wenc.github.io/blog/2014/11/19/tencent-jd-keywords/</id>
     <published>2014-11-19T10:45:02.000Z</published>
     <updated>2016-12-04T14:15:25.000Z</updated>
     
@@ -259,16 +259,16 @@
     </summary>
     
     
-      <category term="Python" scheme="http://damon-wenc.github.io/tags/Python/"/>
+      <category term="Python" scheme="http://damon-wenc.github.io/blog/tags/Python/"/>
     
-      <category term="Spider" scheme="http://damon-wenc.github.io/tags/Spider/"/>
+      <category term="Spider" scheme="http://damon-wenc.github.io/blog/tags/Spider/"/>
     
   </entry>
   
   <entry>
     <title>简易自动化测试框架</title>
-    <link href="http://damon-wenc.github.io/2014/05/08/simple-auto-test-framework/"/>
-    <id>http://damon-wenc.github.io/2014/05/08/simple-auto-test-framework/</id>
+    <link href="http://damon-wenc.github.io/blog/2014/05/08/simple-auto-test-framework/"/>
+    <id>http://damon-wenc.github.io/blog/2014/05/08/simple-auto-test-framework/</id>
     <published>2014-05-08T03:11:11.000Z</published>
     <updated>2016-12-04T14:14:43.000Z</updated>
     
@@ -323,16 +323,16 @@
     </summary>
     
     
-      <category term="Python" scheme="http://damon-wenc.github.io/tags/Python/"/>
+      <category term="Python" scheme="http://damon-wenc.github.io/blog/tags/Python/"/>
     
-      <category term="Automation" scheme="http://damon-wenc.github.io/tags/Automation/"/>
+      <category term="Automation" scheme="http://damon-wenc.github.io/blog/tags/Automation/"/>
     
   </entry>
   
   <entry>
     <title>豆瓣高分电影年代录</title>
-    <link href="http://damon-wenc.github.io/2014/03/26/high-rate-movies-in-douban-by-years/"/>
-    <id>http://damon-wenc.github.io/2014/03/26/high-rate-movies-in-douban-by-years/</id>
+    <link href="http://damon-wenc.github.io/blog/2014/03/26/high-rate-movies-in-douban-by-years/"/>
+    <id>http://damon-wenc.github.io/blog/2014/03/26/high-rate-movies-in-douban-by-years/</id>
     <published>2014-03-26T14:50:40.000Z</published>
     <updated>2016-12-04T14:05:29.000Z</updated>
     
@@ -360,9 +360,9 @@
     </summary>
     
     
-      <category term="Python" scheme="http://damon-wenc.github.io/tags/Python/"/>
+      <category term="Python" scheme="http://damon-wenc.github.io/blog/tags/Python/"/>
     
-      <category term="Spider" scheme="http://damon-wenc.github.io/tags/Spider/"/>
+      <category term="Spider" scheme="http://damon-wenc.github.io/blog/tags/Spider/"/>
     
   </entry>
   
