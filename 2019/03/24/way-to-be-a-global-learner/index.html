@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+
+  <meta name="description" content="登高望远，好好学习"/>
+
+
+
+
+  <meta name="keywords" content="水, Simple Talks" />
+
+
+
+
+
+
+
+
+
+
+  <link rel="alternate" href="/blog/atom.xml" title="Simple Talks">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/blog/favicon.ico?v=2.10.2" />
+
+
+
+<link rel="canonical" href="http://damon-wenc.github.io/blog/2019/03/24/way-to-be-a-global-learner/"/>
+
+
+
+  <link rel="stylesheet" type="text/css" href="/blog/lib/fancybox/jquery.fancybox.css" />
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/blog/lib/nprogress/nprogress.min.css" />
+
+
+
+<link rel="stylesheet" type="text/css" href="/blog/css/style.css?v=2.10.2" />
+
+
+
+  
+
+
+
+  <script id="baidu_push">
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+
+
+
+
+
+
+
+<script>
+  window.config = {"leancloud":{"app_id":null,"app_key":null},"toc":true,"fancybox":true,"pjax":true};
+</script>
+
+    <title> 登高望远，好好学习 - Simple Talks </title>
+  </head>
+
+  <body><div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/blog/." class="logo">Simple Talks</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    
+      <a href="/blog/">
+        <li class="mobile-menu-item">
+          
+          
+            Home
+          
+        </li>
+      </a>
+    
+  </ul>
+</nav>
+
+    <div class="container" id="mobile-panel">
+      <header id="header" class="header"><div class="logo-wrapper">
+  <a href="/blog/." class="logo">Simple Talks</a>
+</div>
+
+<nav class="site-navbar">
+  
+    <ul id="menu" class="menu">
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/blog/">
+            
+            
+              Home
+            
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+
+      </header>
+
+      <main id="main" class="main">
+        <div class="content-wrapper">
+          <div id="content" class="content">
+            
+  
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          登高望远，好好学习
+        
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2019-03-24
+        </span>
+        
+        
+      </div>
+    </header>
+
+    
+    
+  <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">Contents</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前期关键点"><span class="toc-text">前期关键点</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#搭建方式"><span class="toc-text">搭建方式</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#vps-耗时1小时"><span class="toc-text">vps (耗时1小时)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ss-server-（耗时3分钟）"><span class="toc-text">ss server （耗时3分钟）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ss-client-（耗时3分钟）"><span class="toc-text">ss client （耗时3分钟）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#BBR"><span class="toc-text">BBR</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ss-manager-（耗时8小时）"><span class="toc-text">ss manager （耗时8小时）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#终极解决方案（耗时3分钟）"><span class="toc-text">终极解决方案（耗时3分钟）</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#入门文档推荐"><span class="toc-text">入门文档推荐</span></a></li></ol>
+    </div>
+  </div>
+
+
+
+    <div class="post-content">
+      
+        <p>这篇文章简单介绍（记录）一下如何科学上网的方法、准备以及入门教程。</p>
+<a id="more"></a>
+<h1 id="前期关键点"><a href="#前期关键点" class="headerlink" title="前期关键点"></a>前期关键点</h1><p>keywords: 国外vps、ss server、ss client</p>
+<p>ss是一种带加密的流量转发方式，所以首先你需要一台位于国外网络的vps，它将转发你加密后的流量到国外的网络。<br>server 和 client不必说了，cs模式。<br>如果要多人共享，有成熟的ss manager方案了。<br>项目主地址：<a href="https://github.com/shadowsocks" target="_blank" rel="external">GitHub</a>，各种各样的子项目均在这个位置下。</p>
+<h1 id="搭建方式"><a href="#搭建方式" class="headerlink" title="搭建方式"></a>搭建方式</h1><p>下面会逐级介绍，其实个人使用止步于BBR即可了，省时省力；多人使用可以上一个共享环境，会费力一些，不过后面也有shortcut~</p>
+<h2 id="vps-耗时1小时"><a href="#vps-耗时1小时" class="headerlink" title="vps (耗时1小时)"></a>vps (耗时1小时)</h2><p>预计耗时写的比较长，其实熟练后很快，无非就是掏钱、买、部署、连上嘛 ┑(￣Д ￣)┍<br>这里主要是第一次的选择时间会长一些，如果遇上纠结星人，比如我，几乎要选好几天的。。。</p>
+<p>vps个人使用可以选择年付的、线路优良的路线，例如搬瓦工的CN2 GIA或者something else；如果多人使用，可能尽量选择月付的vps会比较好，毕竟目标较大。</p>
+<p>选择指导的话主要推荐两个：<a href="https://zhuanlan.zhihu.com/VPS-youhuima" target="_blank" rel="external">VPS艹机狂魔</a> 和 <a href="https://zhuji.lu/topic/67/新手入门-进阶-vps-推荐-购买指南" target="_blank" rel="external">撸主机</a></p>
+<p>个人用过bandwagon和<a href="https://www.vultr.com/?ref=7442164" target="_blank" rel="external">vultr</a>，未来打算试一试<a href="https://app.cloudcone.com/?ref=3162" target="_blank" rel="external">cloudcone</a>。<br>好心人看完我这篇文章觉得还有用，如果想试试<a href="https://www.vultr.com/?ref=7442164" target="_blank" rel="external">vultr</a>或<a href="https://app.cloudcone.com/?ref=3162" target="_blank" rel="external">cloudcone</a>的话，可以点击链接注册试用，可以给我返几根雪糕钱（doge）。</p>
+<p>简单感受就是：</p>
+<ul>
+<li>bandwagon：单节点，无法换服务器ip，封了就完了。比较省心省事，自带模板。年付不贵。</li>
+<li><a href="https://www.vultr.com/?ref=7442164" target="_blank" rel="external">vultr</a>：全球机房，封了一个ip可以换另一个机房再试试。物理硬件性能爆炸强，网络较快。主要优点就是<strong>节点多</strong>。</li>
+<li><a href="https://app.cloudcone.com/?ref=3162" target="_blank" rel="external">cloudcone</a>：看起来ping值低，速度快。可月付。</li>
+</ul>
+<p>vps现在变贵了，年费大约都在200多300块，所以也可以众筹下，土豪除外。</p>
+<p>选择机房的话就以下几个点：</p>
+<ul>
+<li>靠谱度，别跑路。</li>
+<li>最好能换ip。</li>
+<li>最基本能用ping命令测试下机房ip看看时延和丢包率总要会吧。</li>
+<li>可以试试<a href="https://www.ipip.net/product/client.html" target="_blank" rel="external">besttrace</a>，这个有图形化的traceroute显示，线路肯定绕弯越少越快咯。</li>
+</ul>
+<h2 id="ss-server-（耗时3分钟）"><a href="#ss-server-（耗时3分钟）" class="headerlink" title="ss server （耗时3分钟）"></a>ss server （耗时3分钟）</h2><p>GitHub上的<a href="https://github.com/shadowsocks/shadowsocks-libev" target="_blank" rel="external">libev</a>版本，还有其他Python或Go版本，都差不多。</p>
+<p>以Ubuntu为例的话就：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># install</span></div><div class="line">sudo apt update</div><div class="line">sudo apt install shadowsocks-libev</div><div class="line"></div><div class="line"><span class="comment"># Edit the configuration file</span></div><div class="line">sudo vim /etc/shadowsocks-libev/config.json</div><div class="line"></div><div class="line"><span class="comment"># Edit the default configuration for debian</span></div><div class="line">sudo vim /etc/default/shadowsocks-libev</div><div class="line"></div><div class="line"><span class="comment"># Start the service</span></div><div class="line">sudo /etc/init.d/shadowsocks-libev start    <span class="comment"># for sysvinit, or</span></div><div class="line">sudo systemctl start shadowsocks-libev      <span class="comment"># for systemd</span></div></pre></td></tr></table></figure></p>
+<p>就完事儿了。<br>主要就修改config.json里的ip、端口、密码和加密方式，最简改个ip就行了。</p>
+<h2 id="ss-client-（耗时3分钟）"><a href="#ss-client-（耗时3分钟）" class="headerlink" title="ss client （耗时3分钟）"></a>ss client （耗时3分钟）</h2><p>client下载系统平台对应的版本就好了：</p>
+<ul>
+<li><a href="https://github.com/shadowsocks/ShadowsocksX-NG/releases" target="_blank" rel="external">MacOS</a></li>
+<li><a href="https://github.com/shadowsocks/shadowsocks-android/releases" target="_blank" rel="external">Android</a></li>
+<li><a href="https://github.com/shadowsocks/shadowsocks-windows/releases" target="_blank" rel="external">Windows</a></li>
+</ul>
+<p>然后填上上面server config.json的参数就好了。</p>
+<h2 id="BBR"><a href="#BBR" class="headerlink" title="BBR"></a>BBR</h2><p>BBR是Google开发的TCP拥塞算法，简单来说就是动态超发，可以在丢包多的网络下显著改善网络性能。对网络环境恶劣的ss有奇效。<br>具体原理和用法就不在这里啰嗦了，网上一搜一大把。<br>直接发代码：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">modprobe tcp_bbr</div><div class="line"><span class="built_in">echo</span> <span class="string">"tcp_bbr"</span> &gt;&gt; /etc/modules-load.d/modules.conf</div><div class="line"><span class="built_in">echo</span> <span class="string">"net.core.default_qdisc=fq"</span> &gt;&gt; /etc/sysctl.conf</div><div class="line"><span class="built_in">echo</span> <span class="string">"net.ipv4.tcp_congestion_control=bbr"</span> &gt;&gt; /etc/sysctl.conf</div><div class="line"></div><div class="line">sysctl -p</div><div class="line">sysctl net.ipv4.tcp_available_congestion_control</div><div class="line">sysctl net.ipv4.tcp_congestion_control</div></pre></td></tr></table></figure></p>
+<p>注意vps OS的<strong>Linux内核版本需大于4.9</strong>.</p>
+<p><strong>个人玩家到这里就可以结束了</strong>。</p>
+<h2 id="ss-manager-（耗时8小时）"><a href="#ss-manager-（耗时8小时）" class="headerlink" title="ss manager （耗时8小时）"></a>ss manager （耗时8小时）</h2><p>因为我是个穷*，所以服务器都靠一群爱好学习的小伙伴众筹了。对于多人使用的环境，可以搭一个<a href="https://github.com/shadowsocks/shadowsocks-manager" target="_blank" rel="external">ss-manager</a>来管理用户的注册和使用状况。</p>
+<p>这个玩意儿因为是比较偏前端的，对于后端程序员我来说不太熟，折腾了好久；尤其是原作者开始商业卖钱了… 文档就更新得更少了，很多时候要靠猜，着实花费了好多时间。</p>
+<p>下面我总结了一下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div></pre></td><td class="code"><pre><div class="line">apt-get update</div><div class="line">apt-get install net-tools curl git sudo software-properties-common python-pip nodejs shadowsocks-libev node-pre-gyp -y tzdata</div><div class="line">curl <span class="_">-s</span>L https://deb.nodesource.com/setup_10.x | sudo -E bash -</div><div class="line">sudo apt-get install -y nodejs</div><div class="line">npm install -g node-pre-gyp</div><div class="line">sudo npm i -g shadowsocks-manager@0.29 --unsafe-perm</div><div class="line">mkdir /root/.ssmgr</div><div class="line"></div><div class="line"></div><div class="line">vi /root/.ssmgr/path.yml</div><div class="line"></div><div class="line"><span class="built_in">type</span>: s</div><div class="line">shadowsocks:</div><div class="line">  address: 127.0.0.1:6001</div><div class="line">manager:</div><div class="line">  address: 0.0.0.0:6002</div><div class="line">  password: <span class="string">'******'</span></div><div class="line">db: <span class="string">'db.sqlite'</span></div><div class="line"></div><div class="line"></div><div class="line">ss-manager -m aes-256-cfb -u --manager-address 127.0.0.1:6001</div><div class="line">ssmgr -c /root/.ssmgr/path.yml</div><div class="line"></div><div class="line"></div><div class="line">vi /root/.ssmgr/webgui.yml</div><div class="line"></div><div class="line"><span class="built_in">type</span>: m</div><div class="line">manager:</div><div class="line">  address: your_server_ip_address:6002</div><div class="line">  password: <span class="string">'*****'</span></div><div class="line">plugins:</div><div class="line">  flowSaver:</div><div class="line">    use: <span class="literal">true</span></div><div class="line">  user:</div><div class="line">    use: <span class="literal">true</span></div><div class="line">  account:</div><div class="line">    use: <span class="literal">true</span></div><div class="line">  email:</div><div class="line">    use: <span class="literal">true</span></div><div class="line">    <span class="built_in">type</span>: <span class="string">'smtp'</span></div><div class="line">    username: <span class="string">'*****@163.com'</span></div><div class="line">    password: <span class="string">'*****'</span></div><div class="line">    host: <span class="string">'smtp.163.com'</span></div><div class="line">  webgui:</div><div class="line">    use: <span class="literal">true</span></div><div class="line">    host: <span class="string">'0.0.0.0'</span></div><div class="line">    port: <span class="string">'80'</span></div><div class="line">    site: <span class="string">'http://your_server_ip_address'</span></div><div class="line">    <span class="comment"># icon: 'icon.png'</span></div><div class="line">    <span class="comment"># skin: 'default'</span></div><div class="line">    <span class="comment"># googleAnalytics: 'UA-xxxxxxxx-x'</span></div><div class="line">    <span class="comment"># gcmSenderId: '476902381496'</span></div><div class="line">    <span class="comment"># gcmAPIKey: 'AAAAGzddLRc:XXXXXXXXXXXXXX'</span></div><div class="line">db: <span class="string">'webgui.sqlite'</span></div><div class="line"></div><div class="line">ssmgr -c /root/.ssmgr/webgui.yml</div></pre></td></tr></table></figure></p>
+<p>结合上面的文档，再对照<a href="https://shadowsocks.github.io/shadowsocks-manager/#/home" target="_blank" rel="external">官方</a>文档好好琢磨下，你应该也可以搭起来的。</p>
+<h2 id="终极解决方案（耗时3分钟）"><a href="#终极解决方案（耗时3分钟）" class="headerlink" title="终极解决方案（耗时3分钟）"></a>终极解决方案（耗时3分钟）</h2><p><strong>Docker</strong>，一键搞定以上所有方案，因为除了BBR之外所有的都是用户态程序。</p>
+<ol>
+<li>创建配置文件（和上面一样，就不copy下来了）</li>
+<li><p>运行docker</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">docker pull bigcow88/ss-manager-ubuntu:latest</div><div class="line">docker run --network=host --privileged -v /root/.ssmgr:/root/.ssmgr -dt ss-suite</div></pre></td></tr></table></figure>
+</li>
+<li><p>调整BBR（同样和上面一样）</p>
+</li>
+</ol>
+<p>是不是很嗨？</p>
+<h1 id="入门文档推荐"><a href="#入门文档推荐" class="headerlink" title="入门文档推荐"></a>入门文档推荐</h1><ul>
+<li><a href="https://zhuanlan.zhihu.com/VPS-youhuima" target="_blank" rel="external">VPS艹机狂魔</a></li>
+<li><a href="https://zhuji.lu/topic/67/新手入门-进阶-vps-推荐-购买指南" target="_blank" rel="external">撸主机</a></li>
+<li><a href="https://github.com/shadowsocks" target="_blank" rel="external">GitHub</a></li>
+</ul>
+
+      
+    </div>
+
+    
+      
+      
+
+  <div class="post-copyright">
+    <p class="copyright-item">
+      <span>Author: </span>
+      <a href="http://damon-wenc.github.io/blog">wenchang</a>
+    </p>
+    <p class="copyright-item">
+      <span>Link: </span>
+      <a href="http://damon-wenc.github.io/blog/blog/2019/03/24/way-to-be-a-global-learner/">http://damon-wenc.github.io/blog/blog/2019/03/24/way-to-be-a-global-learner/</a>
+    </p>
+    <p class="copyright-item">
+      <span>License: </span>
+      
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>
+    </p>
+  </div>
+
+
+
+      
+      
+    
+
+    
+      <footer class="post-footer">
+        
+          <div class="post-tags">
+            
+              <a href="/blog/tags/水/">水</a>
+            
+          </div>
+        
+        
+        
+  <nav class="post-nav">
+    
+    
+      <a class="next" href="/blog/2019/02/24/way-to-be-an-old-driver/">
+        <span class="next-text nav-default">老司机练级攻略</span>
+        <span class="prev-text nav-mobile">Next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+    
+  </nav>
+
+
+      </footer>
+    
+
+  </article>
+
+
+          </div>
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+      </main>
+
+      <footer id="footer" class="footer">
+
+  <div class="social-links">
+    
+      
+        
+          <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+          <a href="https://github.com/ahonn" class="iconfont icon-github" title="github"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+
+    
+      <a href="/blog/atom.xml" class="iconfont icon-rss" title="rss"></a>
+    
+  </div>
+
+
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
+  </span>
+
+  <span class="copyright-year">
+    
+    &copy; 
+     
+      2015 - 
+    
+    2019
+
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">wenchang</span>
+  </span>
+</div>
+
+      </footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div>
+
+    
+  
+  
+
+  
+
+
+
+    
+  
+
+
+
+  
+  
+
+
+
+
+
+  
+    <script type="text/javascript" src="/blog/lib/jquery/jquery.min.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/blog/lib/slideout/slideout.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/blog/lib/fancybox/jquery.fancybox.pack.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/blog/lib/pjax/jquery.pjax.min.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/blog/lib/nprogress/nprogress.min.js"></script>
+  
+
+
+    <script type="text/javascript" src="/blog/js/src/even.js?v=2.10.2"></script>
+
+  </body>
+</html>
