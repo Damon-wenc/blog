@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="http://damon-wenc.github.io/blog/"/>
-  <updated>2019-03-24T15:28:33.004Z</updated>
+  <updated>2019-03-26T13:39:48.669Z</updated>
   <id>http://damon-wenc.github.io/blog/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://damon-wenc.github.io/blog/2019/03/24/way-to-be-a-global-learner/"/>
     <id>http://damon-wenc.github.io/blog/2019/03/24/way-to-be-a-global-learner/</id>
     <published>2019-03-24T08:56:09.000Z</published>
-    <updated>2019-03-24T15:28:33.004Z</updated>
+    <updated>2019-03-26T13:39:48.669Z</updated>
     
     <content type="html"><![CDATA[<p>这篇文章简单介绍（记录）一下如何科学上网的方法、准备以及入门教程。</p>
 <a id="more"></a>
@@ -66,7 +66,7 @@
 <ol>
 <li>创建配置文件（和上面一样，就不copy下来了）</li>
 <li><p>运行docker</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">docker pull bigcow88/ss-manager-ubuntu:latest</div><div class="line">docker run --network=host --privileged -v /root/.ssmgr:/root/.ssmgr -dt ss-suite</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">docker pull bigcow88/ss-manager-ubuntu:latest</div><div class="line">docker run --network=host --privileged -v /root/.ssmgr:/root/.ssmgr --restart=always -dt bigcow88/ss-manager-ubuntu:latest</div></pre></td></tr></table></figure>
 </li>
 <li><p>调整BBR（同样和上面一样）</p>
 </li>
